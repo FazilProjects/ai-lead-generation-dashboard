@@ -76,3 +76,13 @@ Through this project, I practiced:
 ## Author
 
 Built by Fazil Waseem as a practical AI automation and lead generation portfolio project.
+
+## Live Demo
+
+https://fazilprojects.github.io/ai-lead-generation-dashboard/
+
+## Screenshot
+
+![AI Lead Generation Dashboard Demo](dashboard-demo.png.png)
+
+## Project Overview

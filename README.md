@@ -8,7 +8,7 @@ https://fazilprojects.github.io/ai-lead-generation-dashboard/
 
 ## Screenshot
 
-![AI Lead Generation Dashboard Demo](dashboard-demo.png)
+![AI Lead Generation Dashboard Demo](dashboard-demo.png.png)
 ## Project Overview
 
 This project was built as part of my AI automation and lead generation portfolio. The goal was to create a simple but useful dashboard that shows how AI-style workflows can help businesses plan outreach and qualify leads.

@@ -76,7 +76,7 @@ Through this project, I practiced:
 * Add saved lead plans using local storage
 * Add AI API integration in the future
 * Add more industries and outreach templates
-* Add brand color system using blue, red, yellow, and green accents
+* Improve brand consistency across future dashboard components
 
 ## Author
 

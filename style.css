@@ -1,3 +1,15 @@
+:root {
+  --blue: #2563eb;
+  --red: #ef4444;
+  --yellow: #facc15;
+  --green: #22c55e;
+  --dark: #111827;
+  --light: #f9fafb;
+  --text: #1f2937;
+  --muted: #4b5563;
+  --border: #e5e7eb;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,14 +19,32 @@
 body {
   font-family: Arial, sans-serif;
   background: #f4f7fb;
-  color: #1f2937;
+  color: var(--text);
   line-height: 1.6;
 }
 
+body::before {
+  content: "";
+  display: block;
+  height: 6px;
+  background: linear-gradient(
+    90deg,
+    var(--blue) 0%,
+    var(--blue) 25%,
+    var(--red) 25%,
+    var(--red) 50%,
+    var(--yellow) 50%,
+    var(--yellow) 75%,
+    var(--green) 75%,
+    var(--green) 100%
+  );
+}
+
 .hero {
-  background: linear-gradient(135deg, #111827, #2563eb);
+  background: linear-gradient(135deg, var(--dark), var(--blue));
   color: white;
   padding: 70px 10%;
+  position: relative;
 }
 
 .tagline {
@@ -28,6 +58,22 @@ body {
 .hero h1 {
   font-size: 44px;
   margin-bottom: 15px;
+}
+
+.hero h1::after {
+  content: "";
+  display: block;
+  width: 160px;
+  height: 6px;
+  margin-top: 16px;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    var(--blue),
+    var(--red),
+    var(--yellow),
+    var(--green)
+  );
 }
 
 .hero-text {
@@ -50,16 +96,17 @@ body {
   padding: 28px;
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(229, 231, 235, 0.8);
 }
 
 .card h2 {
   margin-bottom: 10px;
-  color: #111827;
+  color: var(--dark);
 }
 
 .card p {
   margin-bottom: 18px;
-  color: #4b5563;
+  color: var(--muted);
 }
 
 label {
@@ -80,7 +127,7 @@ input {
 }
 
 input:focus {
-  border-color: #2563eb;
+  border-color: var(--blue);
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
 }
 
@@ -90,7 +137,7 @@ button {
   padding: 14px;
   border: none;
   border-radius: 10px;
-  background: #2563eb;
+  background: linear-gradient(90deg, var(--blue), var(--green));
   color: white;
   font-size: 16px;
   font-weight: bold;
@@ -99,25 +146,42 @@ button {
 }
 
 button:hover {
-  background: #1d4ed8;
   transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.25);
 }
 
 .output-card {
-  border-top: 5px solid #2563eb;
+  border-top: 6px solid var(--blue);
 }
 
 .output-box {
-  background: #f9fafb;
-  border: 1px solid #e5e7eb;
+  background: var(--light);
+  border: 1px solid var(--border);
   border-radius: 12px;
   padding: 18px;
   margin-top: 16px;
+  position: relative;
+}
+
+.output-box:nth-child(2) {
+  border-left: 5px solid var(--blue);
+}
+
+.output-box:nth-child(3) {
+  border-left: 5px solid var(--red);
+}
+
+.output-box:nth-child(4) {
+  border-left: 5px solid var(--yellow);
+}
+
+.output-box:nth-child(5) {
+  border-left: 5px solid var(--green);
 }
 
 .output-box h3 {
   margin-bottom: 8px;
-  color: #111827;
+  color: var(--dark);
 }
 
 .output-box p {

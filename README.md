@@ -6,6 +6,10 @@ A practical AI-powered lead generation dashboard concept that helps businesses c
 
 https://fazilprojects.github.io/ai-lead-generation-dashboard/
 
+## Screenshot
+
+![AI Lead Generation Dashboard Demo](dashboard-demo.png.png)
+
 ## Project Overview
 
 This project was built as part of my AI automation and lead generation portfolio. The goal was to create a simple but useful dashboard that shows how AI-style workflows can help businesses plan outreach and qualify leads.
@@ -43,13 +47,13 @@ Based on these inputs, it generates:
 
 ## Example Use Case
 
-A business offering AI appointment booking and follow-up automation to dental clinics can use this dashboard to quickly create a basic lead generation plan.
+A business offering an AI lead management and follow-up system to plumbing companies can use this dashboard to quickly create a basic lead generation plan.
 
 Example input:
 
-* Business niche: Dental clinics
-* Service offered: AI appointment booking and follow-up automation
-* Target market: Local businesses in the United States
+* Business niche: Plumbing companies
+* Service offered: AI Lead Management and Follow-up System
+* Target market: Local businesses in the UK
 
 The dashboard then creates a simple outreach strategy and lead qualification notes.
 
@@ -72,17 +76,8 @@ Through this project, I practiced:
 * Add saved lead plans using local storage
 * Add AI API integration in the future
 * Add more industries and outreach templates
+* Add brand color system using blue, red, yellow, and green accents
 
 ## Author
 
 Built by Fazil Waseem as a practical AI automation and lead generation portfolio project.
-
-## Live Demo
-
-https://fazilprojects.github.io/ai-lead-generation-dashboard/
-
-## Screenshot
-
-![AI Lead Generation Dashboard Demo](dashboard-demo.png.png)
-
-## Project Overview
